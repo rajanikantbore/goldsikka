@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/Frontend/Code/css/home.css">
+    <!-- <link rel="stylesheet" href="/Frontend/Code/js/home.js"> -->
+    <title>Goldsikka | Buy Gold Jewellery online | Online Gold Jewellery | Latest Gold Jewellery Collections</title>
+</head>
+<body>
+
+<!-- Navbar     -->
+<nav class="navbar">
+    <div class="nav">
+        <img src="/Frontend/Images/goldsikka-logo.png" class="brand-logo" alt="">
+        <div class="nav-items">
+            <div class="search">
+                <input type="text" class="search-box" placeholder="Search ">
+                <button class="search-btn">Search</button>
+            </div>
+            <a href="#"><img src="/Frontend/Images/imges/user.png" alt=""></a>
+            <a href="#"><img src="/Frontend/Images/imges/cart.png" alt=""></a>    
+        </div>
+    </div>
+
+    <div class="nav-links">
+        <ul class="link-container">
+            <li class="link-item"><a href="#" class="link">HOME</a></li>
+            <li class="link-item"><a href="#" class="link">JEWELS STORE</a></li>
+            <li class="link-item"><a href="#" class="link">BUY GOLD</a></li>
+            <li class="link-item"><a href="#" class="link">SELL GOLD</a></li> 
+            <li class="link-item"><a href="#" class="link">UPDATES</a></li>
+            <li class="link-item"><a href="#" class="link">CONTACT</a></li>
+            <li class="link-item"><a href="#" class="link">ABOUT US</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Slides -->
+<div class="slideshow-container">
+
+    <!-- <div class="mySlides fade">
+        <img src="/Frontend/Images/imges/products/Valentines-Day-Banner-Inside-desktop.jpg" style="width:945px" height="500px" >
+    </div> -->
+
+    <div class="mySlides fade">
+        <img src="/Frontend/Images/da-zoon.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="/Frontend/Images/gold-blocks.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="/Frontend/Images/ornam.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+        <img src="/Frontend/Images/queen-18.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="/Frontend/Images/v-buy-gold.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="/Frontend/Images/white-rose.jpg" style="width:100%">
+        <!-- <div class="text">Caption Three</div> -->
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" onclick="currentSlide(4)"></span> 
+      <span class="dot" onclick="currentSlide(5)"></span> 
+      <span class="dot" onclick="currentSlide(6)"></span> 
+      <span class="dot" onclick="currentSlide(7)"></span> 
+    </div>
+    
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+    
+    
+        <!-- Live price Section -->
+<section>
+    <div class="rate-heading"> 
+        <h1>
+            <img src="/Frontend/Images/imges/live-price.gif" class="ratepic">
+                Live Rates
+                    <a href="" class="refresh">
+                        Refresh
+                    </a>
+        </h1>
+    </div>
+        <div class="rate-datahead">    
+            <div class="rate-data" style="background-color:#aaa">
+                <h2 class="rate-name">24K Gold</h2>
+                <p class="rate-subname">999 Purity</p>
+                <h1 class="price">₹ 5,051.20<span class="grams">  /gram</span></h1>
+                <p class="tc">*T&C apply</p>
+            </div>
+
+            <div class="rate-data" style="background-color:#bbb">
+                <h2 class="rate-name">22K Gold</h2>
+                <p class="rate-subname">916 Purity</p>    
+                <h1 class="price">₹ 5,051.20<span class="grams">  /gram</span></h1>  
+                <p class="tc">*T&C apply</p>
+            </div>
+
+            <div class="rate-data" style="background-color:#ccc">
+                <h2 class="rate-name">24K Silver</h2>
+                <p class="rate-subname">999 Purity</p>
+                <h1 class="price">₹ 5,051.20<span class="grams">  /gram</span></h1> 
+                <p class="tc">*T&C apply</p>
+            </div>
+        </div>        
+        
+    </section>
+
+<!-- Gold Hub -->    
+<section>    
+    <div class="goldhub">
+        <h1 class="goldhub-head">Gold Hub</h1>
+            
+            <div class="goldhub-image">    
+                <img src="/Frontend/Images/products/gold-hub-1.jpg" alt="">
+            </div>
+            <div class="goldhub-image">
+                <img src="/Frontend/Images/products/gold-hub-2.jpg" alt="">
+            </div>
+            <div class="goldhub-image"> 
+                <img src="/Frontend/Images/products/gold-hub-3.jpg" alt="">
+            </div>
+    </div>
+</section>
+
+<!-- jewellary -->
+<section>
+    <div class="jewellary">     
+        <h1 class="jewellary-head">Jewellary</h1>
+            <div class="jewellary-image">
+                <img src="/Frontend/Images/products/gs-ornam-image.jpg" alt="">
+             <!-- <p>Know More</p>       -->
+            </div>
+            <div class="jewellary-image">
+                <img src="/Frontend/Images/products/queen-image.jpg" alt="">
+            </div>
+            <div class="jewellary-image">
+                <img src="/Frontend/Images/products/da-zoon-image.jpg" alt="">
+            </div> 
+            
+            <div class="jewellary-image">
+                <img src="/Frontend/Images/products/white-rose-image.jpg" alt="" >
+            </div>
+    </div>     
+</section>
+
+<!-- cards-container -->
+<section class="product">
+    <h2 class="product-category">Best Selling</h2>
+    <br>
+    <button class="pre-btn"><img src="/Frontend/Images/imges/arrow.png" alt=""></button>
+    <button class="nxt-btn"><img src="/Frontend/Images/imges/arrow.png" alt=""></button>
+    <div class="product-container">
+        <div class="product-card">
+            <div class="product-image">
+                <!-- <span class="discount-tag">10% off</span> -->
+                <img src="/Frontend/Images/imges/products/premium jewellary/gold-jewellerys-1.jpg" class="product-thumb" alt="">
+            </div>
+            <div class="product-info">
+                <h2 class="product-name">Ring</h2>
+                <!-- <span class="product-price">INR 50,500</span><span class="actual-price">INR 75,000</span> -->
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <!-- <span class="discount-tag">10% off</span> -->
+                <img src="/Frontend/Images/imges/products/premium jewellary/gold-jewellerys-2.jpg" class="product-thumb" alt="">
+            </div>
+            <div class="product-info">
+                <h2 class="product-name">Ring</h2>
+                <!-- <span class="product-price">INR 50,500</span><span class="actual-price">INR 75,000</span> -->
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <!-- <span class="discount-tag">10% off</span> -->
+                <img src="/Frontend/Images/imges/products/premium jewellary/premium-jewellery-3.png" class="product-thumb" alt="">
+            </div>
+            <div class="product-info">
+                <h2 class="product-name">Ring</h2>
+                <!-- <span class="product-price">INR 50,500</span><span class="actual-price">INR 75,000</span> -->
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <!-- <span class="discount-tag">10% off</span> -->
+                <img src="/Frontend/Images/imges/products/premium jewellary/gold-jewellerys-5.jpg" class="product-thumb" alt="">
+            </div>
+            <div class="product-info">
+                <h2 class="product-name">Ring</h2>
+                <!-- <span class="product-price">INR 50,500</span><span class="actual-price">INR 75,000</span> -->
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <!-- <span class="discount-tag">10% off</span> -->
+                <img src="/Frontend/Images/imges/products/premium jewellary/gold-jewellerys-6.jpg" class="product-thumb" alt="">
+            </div>
+            <div class="product-info">
+                <h2 class="product-name">Ring</h2>
+                <!-- <span class="product-price">INR 50,500</span><span class="actual-price">INR 75,000</span> -->
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <!-- <span class="discount-tag">10% off</span> -->
+                <img src="/Frontend/Images/imges/products/premium jewellary/gold-jewellerys-7.jpg" class="product-thumb" alt="">
+            </div>
+            <div class="product-info">
+                <h2 class="product-name">Ring</h2>
+                <!-- <span class="product-price">INR 50,500</span><span class="actual-price">INR 75,000</span> -->
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <!-- <span class="discount-tag">10% off</span> -->
+                <img src="/Frontend/Images/imges/products/premium jewellary/gold-jewellerys-8.jpg" class="product-thumb" alt="">
+            </div>
+            <div class="product-info">
+                <h2 class="product-name">Ring</h2>
+                <!-- <span class="product-price">INR 50,500</span><span class="actual-price">INR 75,000</span> -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+        <div class="footer-content">
+            <img src="/Frontend/Images/imges/goldsikka-logo.png" class="logo" alt="">
+            <div class="footer-ul-container">
+                <ul class="category">
+                    <li class="category-title">Shop</li>
+                    <li><a href="#" class="footer-link">Live Price</a> </li>
+                    <li><a href="#" class="footer-link">Gold</a> </li>
+                    <li><a href="#" class="footer-link">Silver</a> </li>
+                    <li><a href="#" class="footer-link">Buy</a> </li>
+                    <li><a href="#" class="footer-link">Sell </a> </li>
+                </ul>
+                <ul class="category">
+                    <li class="category-title">Services</li>
+                    <li><a href="#" class="footer-link">Partner with Us</a> </li>
+                    <li><a href="#" class="footer-link">Deliver Policy</a> </li>
+                    <li><a href="#" class="footer-link">Refund Policy</a> </li>
+                    <li><a href="#" class="footer-link">General Policy</a> </li>
+                </ul>
+                <ul class="category">    
+                    <li class="category-title">Account</li>
+                    <li><a href="#" class="footer-link">Managae Your Goldsikka ID</a> </li>
+                    <li><a href="#" class="footer-link">Goldsikka Account</a> </li>
+                    <li><a href="#" class="footer-link">goldsikka.com</a> </li>
+                </ul>
+                <ul class="category">
+                    <li class="category-title">Contact</li>
+                    <li><a href="#" class="footer-link">Tollfree No : 1800 8906 122</a> </li>
+                    <li><a href="#" class="footer-link">Phone : 040 4013 7575</a> </li>
+                    <li><a href="#" class="footer-link">Email:info@goldsikka.com</a> </li>
+                    <li><a href="#" class="footer-link">Careers</a> </li>
+                    <li><a href="#" class="footer-link">Gallary</a> </li>
+                    <li><a href="#" class="footer-link">media</a> </li>
+                </ul>
+            </div>
+        </div>
+        <span>
+            <h5 class="about-title">About Compony </h5>
+            <p class="about-info">GoldSikka limited is a dynamic, vibrant, and one of the most aspiring company of its asset class, which is GOLD, the precious yellow metal. Goldsikka Limited is a second-generation business company run by the promoters of the diversified, three decades old Aztar Group, established in 1990, which specializes in Print Media, Tech Applications &amp; E-commerce. The company specializes in Importing &amp; distributing physical gold in India as well as distributors of its proprietary digital gold products such as Digital Gold wallets and many more, across the country.
+                As a pioneer and trailblazer, Goldsikka Limited has evolved as a front-runner company in a very short span of time, since its inception, and has consistently clocked unparalleled growth &amp; market penetration. The company is managed by top-rated professionals, who understand the core values of the business process while strictly adhering to corporate governance protocols. Several corporate organizations like NMDC, Brinks India, IDBI Trusteeship, GJPEC India, PAMP, Indian Bullion &amp; Jewellery Association, BIS, Razor pay is the valued stakeholder of Goldsikka limited.
+                The company promises to give growth opportunities to individuals for showcasing talent in their respective fields by creating a conducive corporate culture, workable atmosphere. Goldsikka Ltd will be in the league of companies with a compounding growth story, the creation of a rich value chain while achieving new milestones and creating new benchmarks in all businesses engaged in the present &amp; future.</p>
+        </span>
+
+        <div class="online-store">
+            <h5 class="online-store-title">Find Us on </h5>
+            <a href="https://play.google.com/store/apps/details?id=com.goldsikka.goldsikka"><img src="/Frontend/Images/imges/playstore-logo.webp" class="store-logo" alt=""></a>
+            <a href="https://apps.apple.com/in/app/goldsikka/id1549497564"><img src="/Frontend/Images/imges/istore.png" class="store-logo" alt=""></a>
+            
+            <a href="https://www.facebook.com/goldsikkaofficial/"><img src="/Frontend/Images/imges/facebooklogo.jpg" class="social-logo" alt=""></a>
+            <a href="https://www.instagram.com/goldsikka_limited/"><img src="/Frontend/Images/imges/instagram.jpg" class="social-logo" alt=""></a>
+            <a href="https://www.linkedin.com/company/goldsikkalimited/"><img src="/Frontend/Images/imges/linkedin.png" class="social-logo" alt=""></a>
+            <a href="https://in.pinterest.com/goldsikka/_created/"><img src="/Frontend/Images/imges/pinterest.png" class="social-logo" alt=""></a>
+            <a href="https://twitter.com/goldsikkaltd"><img src="/Frontend/Images/imges/twitter.png" class="social-logo" alt=""></a>
+            <a href="https://www.youtube.com/channel/UCm65O1cTNaO0NnRE5e1qrzA/featured"><img src="/Frontend/Images/imges/youtubelogo.png" class="social-logo" alt=""></a>
+        </div>
+        <div class="privacy-container">
+            <a href="#" class="privacy">terms and services</a>
+            <a href="#" class="privacy">privacy page</a>
+        </div>
+
+</footer>
+
+<div class="copyright">
+    <h4>© 2019-2022 Goldsikka Ltd. | Designed by : B. Ashok</h4>
+</div>
+
+<script src="/Frontend/Code/js/products.js"></script>
+
+</body>
+</html>

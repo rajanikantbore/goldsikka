@@ -1,0 +1,139 @@
+@import "/Frontend/Code/css/products.css";
+@import "/Frontend/Code/css/nav.css";
+@import "/Frontend/Code/css/footer.css";
+@import "/Frontend/Code/css/ratecard.css";
+@import "/Frontend/Code/css/end.css";
+
+/* Images slideshow */
+.mySlides {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  /* width: 100%; */
+  position: relative;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 5px;
+  width: 5px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* gold-hub */
+.goldhub-head {
+  width: auto;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-family: "Times New Roman", Times, serif;
+  font-style: initial;
+  font-size: 30px;
+  border: 2px solid #fbe5e5;
+  color: darkslategray;
+  padding: 12px 12px;
+  background-color: #cfffdc;
+  padding: 15px;
+  margin: 2px;
+}
+
+.goldhub-image img {
+  justify-content: space-between;
+  float: left;
+  width: 28%;
+  padding: 4px;
+  height: 200px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-left: 4%;
+  border-style: outset;
+  border-radius: 4px;
+  border-color: darkslategray;
+  border: 2px solid #fbe5e5;
+}
+.goldhub::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* jewellary */
+.jewellary-head {
+  width: 100%;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-family: "Times New Roman", Times, serif;
+  font-style: initial;
+  font-size: 30px;
+  background-color: #cfffdc;
+  color: darkslategray;
+  padding: 12px 12px;
+}
+
+.jewellary-image img {
+  float: left;
+  width: 22%;
+  padding: 4px;
+  height: 200px;
+  margin-top: 10px;
+  margin-left: 2.5%;
+  margin-bottom: 20px;
+  border-style: outset;
+  border-radius: 2px;
+  border-color: #c0d8c0;
+  border: 2px solid #fbe5e5;
+}
+
+.jewellary::after {
+  content: "";
+  display: table;
+  clear: both;
+}
